@@ -1,0 +1,356 @@
+<html>
+<head>
+  <style>
+.nav {
+  background-color: pink;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+h1 {
+  color: red;
+  text-shadow: 2px 2px 5px pink;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 50%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color:mediumvioletred;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  transition-duration: 5s;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!--Get your own code at fontawesome.com-->
+  </head>
+  <title>home page</title>
+  <h1><center><i>je T'aime</i></center></h1>
+  <body>
+    <ul class="nav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about us">About Us</a></li>
+  <li><a href="#Specials">Specials</a></li>  
+  <li><a href="#contact us">Contact Us</a></li>
+</ul>
+<br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.google.com/search?rlz=1C1GCEO_enIN866IN866&tbm=isch&sxsrf=ACYBGNQ-8oV5zqFV5bji-cgahvop3pgNRw:1576045100152&q=+cuisine+images&chips=q:cuisine,g_1:american:2lGpSfHCUyQ%3D&usg=AI4_-kRxooGNuJcL581n27EpOtK7lBAuYg&sa=X&ved=0ahUKEwjjv-DC-azmAhXlH7cAHaRhDpkQ4lYIRigO&biw=1366&bih=625&dpr=1">
+      <img src="http://ghk.h-cdn.co/assets/cm/15/11/54ffec52236b6-cheeseburger-lgn.jpg" alt="American cuisine" width="600" height="400">
+    </a>
+    <div class="desc"><b>American cuisine</b></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.google.com/search?rlz=1C1GCEO_enIN866IN866&biw=1366&bih=625&tbm=isch&sxsrf=ACYBGNRnrSjp0A2ke_inGaxZIYz4skxigA%3A1576044350139&sa=1&ei=PofwXYaSCNbTz7sPk42N2AQ&q=indian+cuisine+images&oq=indian+cuisine&gs_l=img.1.4.0l10.608145.613374..615683...1.0..0.111.1468.14j2......0....1..gws-wiz-img.......0i67j0i7i30j35i39.p2WTUBN-DXE">
+      <img src="http://indianchimney.com.au/wp-content/uploads/2018/10/Indian-food-2.jpg" alt="Indian Cusine" width="600" height="400">
+    </a>
+    <div class="desc"><b>Indian Cusine</b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.google.com/search?rlz=1C1GCEO_enIN866IN866&tbm=isch&sxsrf=ACYBGNSsQ7qDWopqlzl400fgQeqKQwarzQ:1576045115825&q=+cuisine+images&chips=q:cuisine,g_1:american:2lGpSfHCUyQ%3D,g_1:italian:biwI_8jHQHc%3D&usg=AI4_-kQ3OjzVqJbzsknP0lwLyS1VVhPcKg&sa=X&ved=0ahUKEwiMg53K-azmAhVvIbcAHVbZDm0Q4lYISCgP&biw=1366&bih=625&dpr=1">
+      <img src="http://www.iitaly.org/sites/default/files/styles/article-slideshow-visual/public/slideshow_pro/natale_1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc"><b>Itanian cuisine</b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.google.com/search?rlz=1C1GCEO_enIN866IN866&biw=1366&bih=625&tbm=isch&sxsrf=ACYBGNRQi5MXNxk2mQj58umzXcJJqoYAsA%3A1576045431838&sa=1&ei=d4vwXdjZMprUz7sPuKejyAw&q=desserts+images&oq=deserts+images&gs_l=img.1.0.0i67j0i10l5j0i7i30l2j0i7i10i30j0i10i30.2220.2220..3353...0.0..0.101.274.2j1......0....1..gws-wiz-img.......35i39j0.__5fDfwuHTc#imgrc=hR56bryRU2sRiM:">
+      <img src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/rocky-road-cheesecake-pudding.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc"><b>Deserts</b></div>
+  </div><br><br><br>
+</div>
+<br><br>
+<p id="home"><a href="F:/WT%20lab/homepage.htm#home"></a></p>
+<h2 id="about us" style="color:deeppink"><u>About Us</u></h2><br>
+<p style="color:purple"><i class='far fa-clock'></i>&nbsp;Open:7:00 AM-11:30 PM<br><br>
+<i class='fas fa-directions' style='font-size:24px'></i>&nbsp;Lobby Level Lower Tank Bund Road | Courtyard by Marriott, Hyderabad 500080, India<br><br>
+
+<b>Details</b><br><br>
+PRICE RANGE<br>
+₹ 1,065 - ₹ 2,983<br><br>
+<strong>CUISINES</strong><br>
+Bar, Cafe, Indian, International, Asian<br><br>
+<strong>SPECIAL DIETS</strong><br>
+Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options<br><br><br>
+</p>
+
+<div class="row"> 
+  <div class="column">
+    <img src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/08/05070155/healthy-food-1024x768.jpeg" style="width:100%">
+    <img src="http://madisonnautilusdiner.com/wp-content/uploads/2019/02/eating-healthy.jpg" style="width:100%">
+    </div>
+  <div class="column">
+    <img src="https://cashkaro.com/blog/wp-content/uploads/sites/5/2019/12/Healthy-food-items-on-Swiggy.jpg" style="width:100%">
+    <img src="https://mamoukaris.com/wp-content/uploads/2019/03/DSC_3279-web-627x376.jpg" style="width:100%">
+    
+  </div>
+  <div class="column">
+    <img src="http://www.abacustraininggroup.co.uk/wp-content/uploads/2015/04/kozzi-pasta_salad_with_organic_peas-2395x1586.jpg" style="width:100%">
+    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/4/26/0/HE_kwon-Ground-Turkey-Enchilada-Stir-Fry-with-Couscous_s4x3.jpg.rend.hgtvcom.966.725.suffix/1461695054811.jpeg" style="width:100%">
+    </div>
+  <div class="column">
+    <img src="http://home.bt.com/images/the-best-foods-to-eat-to-stay-healthy-this-winter-136421664034503901-170929114935.jpg" style="width:100%">
+    <img src="https://www.thestatesman.com/wp-content/uploads/2019/01/iStock-530508382.jpg" style="width:100%">
+    <img src="https://visitbirmingham.com/imageresizer/?image=%2Fdbimgs%2Fimg_mainimagegallery_streetfood.jpg&action=MediaGalleryNew" style="width:100%">
+  </div>  
+  
+  <br>
+</div><br><br>
+<h2 id="Specials" style="color:deeppink"><u>Specials</u></h2><br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://img.theculturetrip.com/768x432/wp-content/uploads/2018/03/biryani-india.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://curlytales.com/wp-content/uploads/2019/04/Ardor-1-735x413.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://www.wallpaperup.com/uploads/wallpapers/2015/05/16/688403/3c38a62a038f52d001738503155b2ec5.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<br><br>
+<h2 id="contact us" style="color:deeppink"><u>Contact Us</u></h2>
+<i class='fas fa-phone-volume' style='font-size:30px;color:green'></i>+91 04 2540 1637
+
+</p>
+  <h2 id="about">
+    <h2 id="clients">
+      <h2 id="contact">
+  </body>
+
+</html>
